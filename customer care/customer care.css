@@ -1,0 +1,30 @@
+/*.no-close .ui-dialog-titlebar-close {display: none }*/
+
+#call-according .ui-icon { display: none; }
+#call-according .ui-accordion-header { padding: 2px 2px 2px 5px; }
+#customer-according .ui-icon { display: none; }
+#customer-according .ui-accordion-header { padding: 2px 2px 2px 5px; }
+#order-according .ui-icon { display: none; }
+#order-according .ui-accordion-header { padding: 2px 2px 2px 5px; }
+
+#call-according .ui-accordion-content { padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; }
+#customer-according .ui-accordion-content { padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; }
+#order-according .ui-accordion-content { padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; }
+
+
+.ui-tabs .ui-tabs-nav li {
+	height: 22px; 
+	font-size:10px !important;
+
+}
+
+/*
+.ui-tabs .ui-tabs-nav li {
+    height:15px;
+    font-size:12px;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+    position:relative;
+    top:-5px  
+}*/
