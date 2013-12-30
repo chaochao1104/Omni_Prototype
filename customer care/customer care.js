@@ -61,8 +61,29 @@ $(function() {
 	$( "#order-according" ).accordion({ heightStyle: "fill" });
 
 	$( "#call-tabs" ).tabs();
+	$( "#customer-tabs" ).tabs();
+	$( "#order-tabs" ).tabs();
+
+	$( "#follow-up-due" ).datepicker();
+
+	$("textarea").autosize();
+	$('.animated').autosize({append: "\n"});
+
+    $(function() {
+        $("#btn-find-customer").button().click(openFindCustomerDiag);
+    });
+
 });
 
+function openFindCustomerDiag() {
+	$( "#find-customer-diag" ).dialog({
+      height: 140,
+      modal: true,
+      position: { my: "left top", at: "right bottom", of: $("#btn-find-customer") },
+      show: { effect: "slide", duration: 200 },
+      hide: { effect: "slide", duration: 200 }
+    });
 
+}
 
 
