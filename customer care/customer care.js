@@ -73,6 +73,8 @@ $(document).ready(function() {
 	$("textarea").autosize();
 	$('.animated').autosize({append: "\n"});
 
+	//$("#call-nature-checkboxes").buttonset();
+
     $(function() {
         $("#btn-find-customer").button().click(openFindCustomerDiag);
     });

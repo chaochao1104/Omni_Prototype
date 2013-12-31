@@ -52,6 +52,16 @@ textarea {
 	vertical-align: top;
 }
 
+#call-nature-checkboxes {
+	width: 100%;
+}
+
+#call-nature-checkboxes tr td {
+	display: table-cell;
+	margin-right: 50px;
+	white-space: nowrap;
+}
+
 .textarea-autosize-animation {
 	-webkit-transition: height 0.2s;
 	-moz-transition: height 0.2s;
@@ -91,4 +101,5 @@ textarea {
 .ui-tabs .ui-tabs-nav li a {
     position:relative;
     top:-5px  
-}*/
+}
+
