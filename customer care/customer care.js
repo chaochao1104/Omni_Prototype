@@ -87,7 +87,7 @@ $(document).ready(function() {
 
 function clearFindCustomerGrid() {
 	var grid = $( "#find-customer-result-grid" );
-	$('#find-customer-result-grid tr').remove();
+	$('#find-customer-result-grid tbody tr').remove();
 }
 
 function addMockedCustomersToGrid() {
