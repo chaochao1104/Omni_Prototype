@@ -23,13 +23,13 @@
 	font-family:"Times New Roman",Georgia,Serif;
 	font-size:100%;
 	white-space:nowrap;
-	vertical-align: top;
+	vertical-align: baseline;
 }
 
 .td-content {
 	font-family:Arial,Verdana,Sans-serif;
 	font-size:80%;
-	vertical-align: text-bottom;
+	vertical-align: baseline;
 }
 
 .space-nowrap {
@@ -40,11 +40,16 @@
 	margin: 2px 2px 2px 2px;
 }
 
+td input[type="text"] {
+	width:100%; 
+}
+
 textarea {
 	width:100%; 
 	overflow: hidden; 
 	word-wrap: break-word; 
 	resize: horizontal;
+	vertical-align: top;
 }
 
 .textarea-autosize-animation {
@@ -54,20 +59,23 @@ textarea {
 }
 
 
-#call-his-grid {
+#call-his-grid,
+#find-customer-result-grid {
 	color: #e78f08;
 	width:100%;
   	border-collapse:collapse; 	
 }
 
-#call-his-grid td {
+#call-his-grid td,
+#find-customer-result-grid td {
 	border:1px solid #1c94c4;
 	color: #000000;
 	font-family:Arial,Verdana,Sans-serif;
 	font-size:80%;
 }
 
-#call-his-grid th {
+#call-his-grid th,
+#find-customer-result-grid th {
 	border:1px solid #1c94c4;
 	font-family:"Times New Roman",Georgia,Serif;
 	font-weight: bold;
