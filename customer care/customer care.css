@@ -15,7 +15,7 @@
 
 .td-title {
 	font-weight:bold;
-	font-family:"Times New Roman",Georgia,Serif;
+	font-family:Arial,Verdana,Georgia,Serif;
 	font-size:80%;
 	white-space:nowrap;
 	vertical-align: baseline;
@@ -146,7 +146,21 @@ h4 {
 	overflow: hidden; 
 	word-wrap: break-word; 
 	resize: horizontal;
-	font-family:Arial,Verdana,Sans-serif;
-	
+	font-family:Arial,Verdana,Sans-serif;	
 	vertical-align: top;
+}
+
+#call-according .ui-accordion-content {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+#customer-according .ui-accordion-content {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#order-according .ui-accordion-content {
+    max-height: 180px;
+    overflow-y: auto;
 }
