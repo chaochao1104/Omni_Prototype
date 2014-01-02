@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='zh-cn' style="height:95%;">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -8,14 +8,17 @@
 <script type="text/javascript" language="javascript" src="../libs/jquery-ui/js/jquery-ui-1.10.3.custom.js"></script>
 <script type="text/javascript" language="javascript" src="../libs/textarea autosize/jquery.autosize.js"></script>
 <script type="text/javascript" language="javascript" src="customer care.js" ></script>
-<link rel="stylesheet" href="../libs/jquery-ui/css/ui-lightness/jquery-ui-1.10.3.custom.css">
+<link rel="stylesheet" href="../libs/jquery-ui/css/redmond/jquery-ui-1.10.3.custom.css">
 <link rel="stylesheet" href="customer care.css">
 
 
 <title>Customer Care</title>
 </head>
 
-<body style="height:100%;">
+<body>
+    <div style="height: 35px; background-color: #0066CC; ">
+        <h1 class="header">Customer Care Dashboard</h1>
+    </div>
     <table id="content-container">
     	<tr style="vertical-align:top; height:40px;">
     		<td id="head" colspan="2">
@@ -35,7 +38,7 @@
     		</td>
     	</tr>
     </table>
-    <div id="call-dialog-container" style="height:300px; float:top;">
+    <div id="call-dialog-container" style="height:360px;">
         <div id="call-according">
             <h3>Call</h3>
             <div id="call-tabs" style="height:100%">
@@ -47,35 +50,35 @@
                   <table>
                     <tr>
                         <td class="td-title">Received at:</td>
-                        <td class="td-content"></td>
+                        <td class="td-content">12/23/13 13:23</td>
                         <td style="width:20px;"></td>
                         <td class="td-title">Caller No.:</td>
-                        <td class="td-content"></td>
+                        <td class="td-content">+86 131 12341231</td>
                     </tr>
                     <tr>
                         <td class="td-title">Hotline No.:</td>
-                        <td><span class="td-content">021-564000000</td>
+                        <td><span class="td-content">+86-021-12345678</td>
                         <td></td>
                         <td class="td-title">Hotline Language.:</td>
                         <td class="td-content">English</td>
                     </tr>
                     <tr>
                         <td class="td-title">Office Code:</td>
-                        <td class="td-content">HKG-001</td>
+                        <td class="td-content">HKG001</td>
                         <td></td>
                         <td class="td-title">Call Channel:</td>
                         <td class="td-content">Web</td>
                     </tr>
                     <tr>
                         <td class="td-title">Queue ID:</td>
-                        <td class="td-content"></td>
+                        <td class="td-content">Product enquiry</td>
                         <td></td>
                         <td class="td-title">Handling Agent:</td>
-                        <td class="td-content">Alex Sun, Lila Han</td>
+                        <td class="td-content">Casha Chen, Amy Jiang, Nancy Wei</td>
                     </tr>
                     <tr>
                         <td class="td-title">Orders Involved:</td>
-                        <td colspan="4" class="td-content">Alex Sun, Lila Han, Sherry Chen, Woody Yi, Sampson Sun, Leon Shen, Lun Liu, Arrow Xu</td>
+                        <td colspan="4" class="td-content"><a href="#">SHA131223001</a>, <a href="#">SHA131223002</a>, <a href="#">SHA131223003</a>, <a href="#">SHA131223004</a>, <a href="#">SHA131223005</a></td>
                     </tr>
                     <tr>
                         <td class="td-title">Reference No.:</td>
@@ -103,7 +106,7 @@
                     <tr>
                         <td class="td-title">Follow Up Order:</td>
                         <td class="td-content">
-                            <input type="text" class="input-margin" value="SHA131223005"/>
+                            <input type="text" class="input-margin" value=""/>
                         </td>
                     </tr>
                     <tr>
@@ -152,7 +155,6 @@
                         <td>
                             <select>
                               <option value ="following" selected="selected">Following</option>
-                              <option value ="finished">Finished</option>
                               <option value ="closed">Closed</option>
                               <option value="overdue">Overdue</option>
                             </select>
@@ -168,7 +170,6 @@
                         <td>
                             <select>
                               <option value ="following" selected="selected">Following</option>
-                              <option value ="finished">Finished</option>
                               <option value ="closed">Closed</option>
                               <option value="overdue">Overdue</option>
                             </select>
@@ -184,7 +185,6 @@
                         <td>
                             <select>
                               <option value ="following">Following</option>
-                              <option value ="finished">Finished</option>
                               <option value ="closed" selected="selected">Closed</option>
                               <option value="overdue">Overdue</option>
                             </select>
@@ -196,7 +196,7 @@
         </div>
     </div>
 
-    <div id="customer-dialog-container" style="height:300px; float:top; margin-top: 20px;">
+    <div id="customer-dialog-container" style="height:250px; margin-top: 10px;">
         <div id="customer-according" >
             <h3>Customer</h3>
             <div id="customer-tabs">
@@ -205,7 +205,7 @@
                 <li><a href="#frag-customer-profile">Customer Profile</a></li>
               </ul>
               <div id="frag-find-customer">
-                <button id="btn-find-customer">+Search Criteria</button>
+                <button id="btn-find-customer">Search</button>
                 <div id="find-customer-diag" title="Search Criteria" style="display:none">
                     <table>
                         <tr>
@@ -230,12 +230,12 @@
                             <td class="td-content"><input type="text"></input></td>
                         </tr>
                         <tr>
-                            <td class="td-title">Adress</td>
+                            <td class="td-title">Address</td>
                             <td colspan="4" class="td-content"><input type="text"></input></td>
                         </tr>
                     </table>
                 </div>
-                <hr/>
+        
 
                 <table id="find-customer-result-grid">
                     <thead>
@@ -255,7 +255,7 @@
 
               </div>
               <div id="frag-customer-profile">
-                <h3>General Information</h3>
+                <h4>General Information</h4>
                 <table>
                     <tr>
                         <td class="td-title">Name:</td>
@@ -279,10 +279,10 @@
                     </tr>
                     <tr>
                         <td class="td-title">Moblie No.1:</td>
-                        <td class="td-content">+86 - 131 09876543</td>
+                        <td class="td-content">+86 - 13109876543</td>
                         <td style="width:15px;"></td>
                         <td class="td-title">Moblie No.2:</td>
-                        <td class="td-content">+86 - 139 76543212</td>
+                        <td class="td-content">+86 - 13976543212</td>
                         <td style="width:15px;"></td>
                         <td class="td-title"></td>
                         <td class="td-content"></td>
@@ -304,13 +304,38 @@
                         <td class="td-content" colspan="7"><a href="mailto:dreamdu@dreamdu.com">chriswang@gmail.com</a></td>
                     </tr>
                 </table>
+                <hr/>
+                <h4>Retailer Relationship</h4>
+                <table id="customer-relationship-grid">
+                    <tr>
+                        <th>Retailer</th>
+                        <th>Last Order Date</th>
+                        <th>VIP Status</th>
+                        <th>Customer ID</th>
+                        <th>Customer Since</th>
+                    </tr>
+                    <tr>
+                        <td>***</td>
+                        <td>2013-12-13</td>
+                        <td>MVP</td>
+                        <td>***0023</td>
+                        <td>2009-11-09</td>
+                    </tr>
+                    <tr>
+                        <td>****</td>
+                        <td>2013-12-19</td>
+                        <td>Platinum</td>
+                        <td>****0056</td>
+                        <td>2008-09-08</td>
+                    </tr>
+                </table>
               </div>
             </div>
         </div>
     </div>
 
 
-    <div id="order-dialog-container" title="Order dialog" style="height:250px; float:top; margin-top: 20px;">
+    <div id="order-dialog-container" title="Order dialog" style="height:180px; margin-top: 10px;">
         <div id="order-according">
             <h3>Order</h3>
             <div id="order-tabs">
@@ -320,13 +345,155 @@
                 <li><a href="#frag-cross-selling">Cross Selling</a></li>
               </ul>
               <div id="frag-order-status">
-                Order Status
+                <table id="order-status-grid">
+                    <tr>
+                        <th>Retailer</th>
+                        <th>Order ID</th>
+                        <th>Order Date</th>
+                        <th>Current Status</th>
+                        <th>Dispatch Date</th>
+                        <th>Est. Arrival Time</th>
+                        <th>Actual Arrival Time</th>
+                        <th>Payment Term</th>
+                        <th>COD Status</th>
+                        <th>Courier</th>
+                        <th>Tracking Number</th>
+                    </tr>
+                    <tr>
+                        <td>***1</td>
+                        <td><a href="#">SHA1312220004</a></td>
+                        <td>12/22/2013</td>
+                        <td>Dispatching</td>
+                        <td>12/23/2013</td>
+                        <td>12/25/2013  17:00:00</td>
+                        <td></td>
+                        <td>Cash of Delivery</td>
+                        <td>UnPaid</td>
+                        <td>SF</td>
+                        <td>SF00123445678</td>
+                    </tr>
+                    <tr>
+                        <td>***2</td>
+                        <td><a href="#">SHA1312210003</a></td>
+                        <td>12/21/2013</td>
+                        <td>Dispatching</td>
+                        <td>12/22/2013</td>
+                        <td>12/24/2013  17:00:00</td>
+                        <td></td>
+                        <td>Direct Debit</td>
+                        <td>NA.</td>
+                        <td>SF</td>
+                        <td>SF00123445621</td>
+                    </tr>
+                    <tr>
+                        <td>***2</td>
+                        <td><a href="#">SHA1312190002</a></td>
+                        <td>12/19/2013</td>
+                        <td>Dispatching</td>
+                        <td>12/22/2013</td>
+                        <td>12/23/2013  17:00:00</td>
+                        <td></td>
+                        <td>Credit Card</td>
+                        <td>NA.</td>
+                        <td>UPS, SF</td>
+                        <td>UPS0234543222, SF00223456034</td>
+                    </tr>
+                    <tr>
+                        <td>***3</td>
+                        <td><a href="#">SHA1312220001</a></td>
+                        <td>12/18/2013</td>
+                        <td>Completed</td>
+                        <td>12/18/2013</td>
+                        <td>12/21/2013  17:00:00</td>
+                        <td>12/21/2013  17:00:00</td>
+                        <td>Cash of Delivery</td>
+                        <td>Paid</td>
+                        <td>UPS</td>
+                        <td>UPS0234543000</td>
+                    </tr>
+                </table>
               </div>
               <div id="frag-return-status">
-                Return Status
+                <table id="return-status-grid">
+                    <tr>
+                        <th colspan="2">Order</th>  
+                        <th colspan="5">Return</th>
+                        <th colspan="6">Handling</th>
+                    </tr>
+                    <tr>
+                        <th>Retailer</th>
+                        <th>Order ID</th>
+                        <th>Status</th>
+                        <th>Request Date</th>
+                        <th>Authorisation No.</th>
+                        <th>Item(s)</th>
+                        <th>Reason</th>
+                        <th>Request</th>
+                        <th>Illegible Reason</th>
+                        <th>Status (h)</th>
+                        <th>Refund Amount</th>
+                        <th>Dispatched Date</th>
+                        <th>Arrival Time</th>
+                    </tr>
+                    <tr>
+                        <td>***1</td>
+                        <td><a href="#">SHA1312220231</a></td>
+                        <td>Awaiting Return</td>
+                        <td>12/22/2013</td>
+                        <td>R13122200000001</td>
+                        <td>Shirts</td>
+                        <td>Wrong Color</td>
+                        <td>Exchange</td>
+                        <td>Normal</td>
+                        <td>Received Returned Goods</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>***2</td>
+                        <td><a href="#">SHA1312210123</a></td>
+                        <td>Processing refund</td>
+                        <td>12/21/2013</td>
+                        <td>R13122100000001</td>
+                        <td>Skirts</td>
+                        <td>Wrong Size</td>
+                        <td>Refund</td>
+                        <td>Normal</td>
+                        <td>Refund Arranged</td>
+                        <td>103 RMB</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
               </div>
               <div id="frag-cross-selling">
-                Cross Selling
+                <table id="cross-selling-grid">
+                    <tr>
+                        <th>Retailer</th>
+                        <th>Item Description</th>
+                        <th>Selling Price</th>
+                        <th>Promotion Details</th>
+                        <th>Promotion Period</th>
+                        <th>Buy</th>
+                    </tr>
+                    <tr>
+                        <td>***1</td>
+                        <td>White Shirt</td>
+                        <td>￥ 145</td>
+                        <td>30% off</td>
+                        <td>25/12/2013 to 01/01/2014</td>
+                        <td><a href="http://www.***1.com">www.***1.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>***1</td>
+                        <td>Jeans</td>
+                        <td>￥ 200</td>
+                        <td>20% off</td>
+                        <td>01/01/2014 to 07/01/2014</td>
+                        <td><a href="http://www.***1.com">www.***1.com</a></td>
+                    </tr>
+                </table>
               </div>
             </div>
         </div>
@@ -334,5 +501,7 @@
   
 	
 </body>
+
 </html>
+
 
