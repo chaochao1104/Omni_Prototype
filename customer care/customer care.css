@@ -36,9 +36,15 @@
 .input-margin {
 	margin: 2px 2px 2px 2px;
 }
-
+/*
 td input[type="text"] {
-	width:100%; 
+	width: 250px;
+}*/
+
+#caller-general-info {
+	font-family:Arial,Verdana,Sans-serif;
+	font-size:60%;
+	color: #000000;
 }
 
 #call-nature-checkboxes {
@@ -62,7 +68,10 @@ td input[type="text"] {
 #customer-relationship-grid,
 #order-status-grid,
 #return-status-grid,
-#cross-selling-grid {
+#cross-selling-grid,
+#follow-up-grid,
+#follow-up-his-grid,
+#todolist-grid {
   	border-collapse:collapse; 	
 }
 
@@ -71,11 +80,15 @@ td input[type="text"] {
 #customer-relationship-grid td,
 #order-status-grid td,
 #return-status-grid td,
-#cross-selling-grid td {
+#cross-selling-grid td,
+#follow-up-grid td,
+#follow-up-his-grid td,
+#todolist-grid td {
 	border:1px solid #1c94c4;
 	color: #000000;
 	font-family:Arial,Verdana,Sans-serif;
 	font-size:70%;
+	padding-right: 10px;
 }
 
 #call-his-grid th,
@@ -83,16 +96,18 @@ td input[type="text"] {
 #customer-relationship-grid th,
 #order-status-grid th,
 #return-status-grid th,
-#cross-selling-grid th {
+#cross-selling-grid th,
+#follow-up-grid th,
+#follow-up-his-grid th,
+#todolist-grid th {
 	border:1px solid #1c94c4;
-	font-family:"Times New Roman",Georgia,Serif;
+	font-family: Arial,Verdana,Sans-serif;
 	font-weight: bold;
 	font-size:80%;
 	white-space:nowrap;
 	padding-left: 5px;
 	padding-right: 5px;
 }
-
 
 .ui-tabs .ui-tabs-panel { 
 	padding: 0.1em 0.4em
@@ -127,9 +142,15 @@ td input[type="text"] {
 .header {
 	color: #ffffff;
 	background-color: #5c9ccc;
-	margin-top: 0 !important;
-	padding-top: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 35px;
+	font-family: Arial,Verdana,Sans-serif;
+	font-weight: normal;
+	font-size:200%;
+	position:relative;
 }
+
 
 body {
 	height: 100%;
@@ -141,7 +162,8 @@ h4 {
 	margin-bottom: 5px;
 }
 
-.ui-widget textarea {
+.ui-widget textarea,
+.ui-widget select {
 	width:100%; 
 	overflow: hidden; 
 	word-wrap: break-word; 
@@ -151,16 +173,13 @@ h4 {
 }
 
 #call-according .ui-accordion-content {
-    max-height: 350px;
-    overflow-y: auto;
-}
-
-#customer-according .ui-accordion-content {
-    max-height: 200px;
     overflow-y: auto;
 }
 
 #order-according .ui-accordion-content {
-    max-height: 180px;
     overflow-y: auto;
+}
+
+.date-picker {
+	max-width: 80px;
 }
