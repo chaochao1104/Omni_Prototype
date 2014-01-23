@@ -143,7 +143,7 @@ function openFollowUpDiag() {
 
 function openTodoListDiag() {
 	$( "#todolist-diag" ).dialog({
-      width: 1000,
+      width: 1100,
       height: 400,
       modal: false,
       position: { my: "center top", at: "center top", of: $("#call-according") },
